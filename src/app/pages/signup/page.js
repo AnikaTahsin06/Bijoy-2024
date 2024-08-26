@@ -1,6 +1,8 @@
+"use client";
+
 export default function Signup() {
     return (
-      <div>
+      <div className="min-h-screen">
         <h1>Signup Page</h1>
       </div>
     );

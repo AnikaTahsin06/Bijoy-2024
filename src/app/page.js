@@ -48,13 +48,11 @@ export default function Home() {
               <td colSpan="5" className="text-center py-4">Loading...</td>
             </tr>
           )} {/* Show loading indicator */}
-
           {error && (
             <tr>
               <td colSpan="5" className="text-center text-red-500 py-4">Error: {error}</td>
             </tr>
           )} {/* Show error message if there is an error */}
-
           {!loading && !error && (
             users.map(user => (
               <tr key={user.id}>

@@ -31,7 +31,7 @@ export default function Home() {
 
   }, []); // Empty dependency array to run the effect only once
   return (
-    <div className="container mx-auto min-h-screen p-4">
+    <div className="container mx-auto min-h-screen p-4 pt-14">
       <table className="min-w-full bg-white text-center">
         <thead>
           <tr>

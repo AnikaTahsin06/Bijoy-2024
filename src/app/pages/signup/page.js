@@ -92,7 +92,7 @@ export default function Signup() {
   };
 
   return (
-    <div className="min-h-screen p-4 max-w-lg mx-auto">
+    <div className="min-h-screen p-4 max-w-lg mx-auto pt-14">
       {confirmationMessage && (
         <div className="bg-green-100 text-green-800 p-4 mb-4 rounded-md">
           {confirmationMessage}
@@ -167,7 +167,7 @@ export default function Signup() {
 
         <button
           type="submit"
-          className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white bg-green-900 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
         >
           Sign Up
         </button>

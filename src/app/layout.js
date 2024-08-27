@@ -1,8 +1,7 @@
 import { Inter } from "next/font/google";
 import Link from 'next/link';
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Authprovider from "@/component/Authprovider/Authprovider";
 
 export const metadata = {
   title: "Bijoy 2024",
@@ -12,20 +11,36 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}> 
-        <ul className="flex p-4 bg-gray-100">
+      <body className="min-h-screen h-screen bg-green-100 overflow-hidden">
+        <ul className="flex items-center justify-between p-4 bg-green-900">
           <li className="mr-6">
-            <Link href="/" className="text-blue-500 hover:text-blue-800">Home</Link>
+            <Link href="/" className="text-rose-700 font-bold text-xl hover:text-rose-800">
+              Bijoy2024
+            </Link>
           </li>
           <li className="mr-6">
-            <Link href="/pages/login" className="text-blue-500 hover:text-blue-800">Login</Link>
+            <Link href="/" className="text-white hover:text-green-100">
+              Home
+            </Link>
           </li>
-          <li className="mr-6">
-            <Link href="/pages/signup" className="text-blue-500 hover:text-blue-800">Signup</Link>
-          </li>
+          <div className="flex ml-auto">
+            <li className="mr-6">
+              <Link href="/pages/login" className="text-white hover:text-green-100">
+                Login
+              </Link>
+            </li>
+            <li className="mr-6">
+              <Link href="/pages/signup" className="text-white hover:text-green-100">
+                Signup
+              </Link>
+            </li>
+          </div>
         </ul>
+
         <main className="flex-grow">
-          {children}
+          <Authprovider>
+            {children}
+          </Authprovider>
         </main>
       </body>
     </html>

@@ -1,5 +1,5 @@
-# Bijoy 24
-Bijoy 24 is a frontend project built using Next.js and Tailwind CSS. The project includes the following key features:
+# Bijoy 2024
+Bijoy 2024 is a frontend project built using Next.js and Tailwind CSS. The project includes the following key features:
 
 1. Login Page with Google Sign-In (SSO): A simple login page that integrates Google Sign-In functionality.
 2. User Data Table: Fetches a list of dummy user data from an external API and displays it in a table format.
